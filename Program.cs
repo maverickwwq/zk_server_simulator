@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using System.IO;
 
-
+//调度令收发系统模拟服务器
 namespace svrSimu
 {
     public class OrderInfo              //调度单信息
