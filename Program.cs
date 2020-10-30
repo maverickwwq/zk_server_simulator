@@ -11,7 +11,11 @@ using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using System.IO;
 
+<<<<<<< HEAD
 //git test 
+=======
+//git test for different commit
+>>>>>>> 08be7344a70fda416e3c5f5be5c4fccf1a40f521
 //调度令收发系统模拟服务器
 namespace svrSimu
 {
