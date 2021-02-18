@@ -54,7 +54,7 @@ namespace DispatchServer
                 if (state == true)       //网络正常，监听线程开启
                 {
                     receiveDataThread.Start();
-                    //sendDataThread.Start();
+                    sendDataThread.Start();
                    netErrorHandleThread.Start();
                    // t1.Start();
                    // t2.Start();
@@ -99,7 +99,7 @@ namespace DispatchServer
                         appLog.exceptionRecord("网络中断" + exc.Message);
                         netErrorHandleThread.Interrupt();       //启动网络故障处理线程
                         Console.WriteLine("接收线程中断");
-                        /*
+                        /*    
                         try
                         {
                             Thread.Sleep(Timeout.Infinite);
@@ -151,10 +151,10 @@ namespace DispatchServer
                         Console.WriteLine("网络恢复");
                         try
                         {
-                            while(receiveDataThread.ThreadState != ThreadState.Running){
-                                Console.WriteLine(receiveDataThread.ThreadState);
+                           // while(receiveDataThread.ThreadState != ThreadState.Running){
+                               // Console.WriteLine(receiveDataThread.ThreadState);
                                 receiveDataThread.Interrupt();
-                            }
+                            //}
                             Thread.Sleep(Timeout.Infinite);
                         }
                         catch (ThreadInterruptedException)

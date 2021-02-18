@@ -51,8 +51,6 @@ namespace svrSimu
             
             while (true)
             {
-                Thread.Sleep(1000);
-                /*
                 s=Console.ReadLine();
                 if (s.Contains("a"))       //receive_order_reply 
                 {
@@ -125,7 +123,6 @@ namespace svrSimu
                     Console.WriteLine("case e");
                     Console.WriteLine("{0}", network.receiveDataThread.ThreadState);
                 }
-                 */
             }
         
         }
