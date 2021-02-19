@@ -69,7 +69,7 @@ namespace DispatchServer
                 string message = "";
                 int a = -1;
                 while(true)
-                { 
+                {
                     if(GlobalVarForApp.networkStatusBool==false)
                     {
                         try
@@ -90,7 +90,6 @@ namespace DispatchServer
                     {
                         Console.WriteLine("working");
                         messageCount = acceptSocket.Receive(messageBuf);        //将接收数据放入缓冲区
-
                     }
                     catch (SocketException exc)
                     {
@@ -99,7 +98,7 @@ namespace DispatchServer
                         appLog.exceptionRecord("网络中断" + exc.Message);
                         netErrorHandleThread.Interrupt();       //启动网络故障处理线程
                         Console.WriteLine("接收线程中断");
-                        /*    
+                        /*
                         try
                         {
                             Thread.Sleep(Timeout.Infinite);
