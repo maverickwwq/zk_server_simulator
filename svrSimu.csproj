@@ -51,9 +51,10 @@
     <Compile Include="CommUtil.cs" />
     <Compile Include="ConnectState.cs" />
     <Compile Include="GlobalVarForApp.cs" />
+    <Compile Include="netandorder.cs" />
     <Compile Include="network.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="OrderAndOp.cs" />
+    <Compile Include="OrderInfo.cs" />
     <Compile Include="OrderOp.cs" />
     <Compile Include="OrderRecord.cs" />
     <Compile Include="Program.cs" />

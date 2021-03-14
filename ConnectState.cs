@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DispatchServer.BaseClass
+namespace svrSimu
 {
     public class ConnectState
     {
